@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.YogaActivity"
+    android:background="#916bcc"
+    android:id="@+id/parentLayoutYoga">
+
+    <TextView
+        android:id="@+id/textViewYoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:text="Yoga"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/parentLayoutYoga"
+        app:layout_constraintStart_toStartOf="@+id/parentLayoutYoga"
+        app:layout_constraintTop_toTopOf="@+id/parentLayoutYoga" />
+
+    <ImageView
+        android:id="@+id/imageViewYoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/parentLayoutYoga"
+        app:layout_constraintStart_toStartOf="@+id/parentLayoutYoga"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYoga"
+        app:srcCompat="@drawable/lotus" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/checkLayoutYoga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#20000000"
+        android:paddingBottom="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/parentLayoutYoga"
+        app:layout_constraintStart_toStartOf="@+id/parentLayoutYoga"
+        app:layout_constraintTop_toBottomOf="@id/imageViewYoga"
+        app:layout_constraintVertical_weight="1">
+
+
+        <TextView
+            android:id="@+id/textViewMarkComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Mark it complete"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/checkLayoutYoga"
+            app:layout_constraintStart_toStartOf="@+id/checkLayoutYoga"
+            app:layout_constraintTop_toTopOf="@+id/checkLayoutYoga" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYoga5min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right|center_vertical"
+            android:text="Yoga 5min  "
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/checkLayoutYoga"
+            app:layout_constraintStart_toStartOf="@+id/checkLayoutYoga"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMarkComplete" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYoga15min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right|center_vertical"
+            android:text="Yoga 15min"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/checkLayoutYoga"
+            app:layout_constraintStart_toStartOf="@+id/checkLayoutYoga"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxYoga5min" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYoga30min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right|center_vertical"
+            android:text="Yoga 30 min"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/checkLayoutYoga"
+            app:layout_constraintStart_toStartOf="@+id/checkLayoutYoga"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxYoga15min" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYoga45min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right|center_vertical"
+            android:text="Yoga 45min"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/checkLayoutYoga"
+            app:layout_constraintStart_toStartOf="@+id/checkLayoutYoga"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxYoga30min" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYoga1hou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right|center_vertical"
+            android:text="Yoga 1hour"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/checkLayoutYoga"
+            app:layout_constraintStart_toStartOf="@+id/checkLayoutYoga"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxYoga45min" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clickLayoutYoga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1A000000"
+        app:layout_constraintBottom_toBottomOf="@+id/parentLayoutYoga"
+        app:layout_constraintEnd_toEndOf="@+id/parentLayoutYoga"
+        app:layout_constraintStart_toStartOf="@+id/parentLayoutYoga"
+        app:layout_constraintTop_toBottomOf="@+id/checkLayoutYoga"
+        app:layout_constraintVertical_weight="1">
+
+        <ImageView
+            android:id="@+id/imageViewBackYoga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/clickLayoutYoga"
+            app:layout_constraintStart_toStartOf="@+id/clickLayoutYoga"
+            app:layout_constraintTop_toTopOf="@+id/clickLayoutYoga"
+            app:srcCompat="@drawable/back2x" />
+
+        <ImageView
+            android:id="@+id/imageViewCheckYoga"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/clickLayoutYoga"
+            app:layout_constraintEnd_toEndOf="@+id/clickLayoutYoga"
+            app:layout_constraintTop_toTopOf="@+id/clickLayoutYoga"
+            app:srcCompat="@drawable/tick2x" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
