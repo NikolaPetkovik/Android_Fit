@@ -7,16 +7,16 @@ Different Activity with Check Box (Weight-Lifting, Yoga, Cardio)
       
   ### 1. Add AndroidManifest
 
- 	<application
+	<application
 
-    <!-- Intent WeightLiftingActivity -->
-    <activity android:name=".activity.WeightLiftingActivity" ></activity>
+		<!-- Intent WeightLiftingActivity -->
+	<activity android:name=".activity.WeightLiftingActivity" ></activity>
 
 		<!-- Intent YogaActivity -->
-    <activity android:name=".activity.YogaActivity"></activity>
+	<activity android:name=".activity.YogaActivity"></activity>
 
 		<!-- Intent CardioActivity -->
-		<activity android:name=".activity.CardioActivity"></activity>
+	<activity android:name=".activity.CardioActivity"></activity>
 		
 	</application>
 
@@ -27,7 +27,7 @@ Different Activity with Check Box (Weight-Lifting, Yoga, Cardio)
 
    - **activity (Package)**
       - WeightLiftingActivity.class
-      - YogaActivity
+      - YogaActivity.class
       - CardioActivity.class
 
    - **singleton (Package)**
