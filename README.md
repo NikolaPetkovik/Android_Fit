@@ -9,13 +9,13 @@ Different Activity with Check Box (Weight-Lifting, Yoga, Cardio)
 
 	<application
 
-		<!-- Intent WeightLiftingActivity -->
+		<!-- Intent WeightLifting Activity -->
 	<activity android:name=".activity.WeightLiftingActivity" ></activity>
 
-		<!-- Intent YogaActivity -->
+		<!-- Intent Yoga Activity -->
 	<activity android:name=".activity.YogaActivity"></activity>
 
-		<!-- Intent CardioActivity -->
+		<!-- Intent Cardio Activity -->
 	<activity android:name=".activity.CardioActivity"></activity>
 		
 	</application>
@@ -42,7 +42,7 @@ Different Activity with Check Box (Weight-Lifting, Yoga, Cardio)
    - activity_cardio.xml   
  
 
-  ### 4. ScreenShoot / Concept
+  ### 3. ScreenShoot / Concept
   
   <img src="readme_image/Fit_Screenshot.gif" width="430"> <img src="readme_image/Fit_Screenshot_Weight-Lifting.gif" width="430">
   
